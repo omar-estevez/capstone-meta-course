@@ -1,0 +1,18 @@
+.nav-item {
+    display: grid;
+    grid-template-rows: none;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      justify-items: center;
+      column-gap: 1.5vw;
+      list-style: none;
+      a{
+        text-decoration: none;
+      }
+    }
+  }

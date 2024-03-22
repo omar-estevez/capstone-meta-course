@@ -1,31 +1,33 @@
+import './../styles/Nav.scss'
 import imageLogo from '../icons_assets/Logo.svg';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
 
     return (
         <>
-            <nav>
+            <nav className='nav-item'>
                 <img src={imageLogo} alt="Little Lemon Logo"/>
-                <ul>
-                    <li>
-                        <a href='#'>Home</a>
-                    </li>
-                    <li>
-                        <a href='#'>About</a>
-                    </li>
-                    <li>
-                        <a href='#'>Menu</a>
-                    </li>
-                    <li>
-                        <a href='#'>Reservations</a>
-                    </li>
-                    <li>
-                        <a href='#'>Order Online</a>
-                    </li>
-                    <li>
-                        <a href='#'>Login</a>
-                    </li>
-                </ul>
+
+                    <Link to='/'>
+                        Home
+                    </Link>
+                    <Link>
+                        About
+                    </Link>
+                    <Link>
+                        Menu
+                    </Link>
+                    <Link to="/booking">
+                        Reservations
+                    </Link>
+                    <Link>
+                        Order Online
+                    </Link>
+                    <Link>
+                        Login
+                    </Link>
+
             </nav>
         </>
     )
