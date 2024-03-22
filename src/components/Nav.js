@@ -6,9 +6,11 @@ const Nav = () => {
 
     return (
         <>
-            <nav className='nav-item'>
-                <img src={imageLogo} alt="Little Lemon Logo"/>
-
+            <nav className='nav'>
+                <div className='image'>
+                    <img src={imageLogo} alt="Little Lemon Logo" />
+                </div>
+                <div className='menu'>
                     <Link to='/'>
                         Home
                     </Link>
@@ -27,7 +29,7 @@ const Nav = () => {
                     <Link>
                         Login
                     </Link>
-
+                </div>
             </nav>
         </>
     )

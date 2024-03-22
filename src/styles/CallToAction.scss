@@ -1,0 +1,65 @@
+.call-section {
+    background-color: #495E57;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    padding: 3vw 0vw;
+    flex-direction: row;
+
+    .info {
+        flex: 0.4;
+        padding: 4vw 3vw 4vw 20vw;
+
+        h1 {
+            color: #F4CE14;
+        }
+
+        h2,
+        p,
+        button {
+            color: #EDEFEE;
+        }
+
+        button {
+            width: 60%;
+            background-color: #F4CE14;
+            padding: 1vw;
+            border-radius: 16px;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: 0.8s;
+            }
+
+            &:active {
+                background-color: rgba(244, 206, 20, 0.5);
+                transition: 0s;
+            }
+        }
+    }
+
+    .image {
+        position: relative;
+
+        img {
+            width: 500px;
+            height: 535px;
+            position: absolute;
+            border-radius: 16px;
+        }
+    }
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+
+        .image{
+            align-self: center;
+            img{
+                width: 120px;
+                height: 140px;
+                position: relative;
+            }
+        }
+    }
+}

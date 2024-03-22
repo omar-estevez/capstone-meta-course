@@ -1,7 +1,11 @@
+import CallToAction from "./CallToAction"
+import Specials from "./Specials";
+
 const Homepage = () => {
     return (
         <>
-            <h1>Homepage</h1>
+            <CallToAction/>
+            <Specials/>
         </>
     )
 }
