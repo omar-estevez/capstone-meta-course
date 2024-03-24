@@ -1,0 +1,58 @@
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #333333;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+    padding: 40px 80px;
+
+    img {
+        width: 20%;
+        border-radius: 16px;
+    }
+
+    .column {
+
+        h3,
+        ul>li>a {
+            color: #EDEFEE;
+        }
+
+        .menu, .contact, .social-media {
+            list-style: none;
+            color: white;
+            padding: 0;
+
+            li {
+                padding: 4px 0px;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .social-media {
+            li {
+                float: left;
+                color: white;
+                font-size: 35px;
+                margin-right: 21px;
+
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+
+        img {
+            width: 75%;
+        }
+    }
+}

@@ -7,7 +7,7 @@
     flex-direction: row;
 
     .info {
-        flex: 0.4;
+        flex: 0.6;
         padding: 4vw 3vw 4vw 20vw;
 
         h1 {
@@ -19,43 +19,27 @@
         button {
             color: #EDEFEE;
         }
-
-        button {
-            width: 60%;
-            background-color: #F4CE14;
-            padding: 1vw;
-            border-radius: 16px;
-
-            &:hover {
-                cursor: pointer;
-                transform: scale(1.05);
-                transition: 0.8s;
-            }
-
-            &:active {
-                background-color: rgba(244, 206, 20, 0.5);
-                transition: 0s;
-            }
-        }
     }
 
     .image {
         position: relative;
-
+        flex: 1;
         img {
-            width: 500px;
-            height: 535px;
+            width: 60%;
+            height: 32rem;
             position: absolute;
             border-radius: 16px;
+            top: -8px;
         }
     }
 
     @media (max-width: 800px) {
         flex-direction: column;
 
-        .image{
+        .image {
             align-self: center;
-            img{
+
+            img {
                 width: 120px;
                 height: 140px;
                 position: relative;

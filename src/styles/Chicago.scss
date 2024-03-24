@@ -1,0 +1,41 @@
+.chicago-section {
+    background-color: #EDEFEE;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    padding: 33px 0vw 58px 0px;
+    flex-direction: row;
+
+    .info {
+        flex: 0.6;
+        padding: 4vw 3vw 4vw 20vw;
+
+        h1 {
+            color: #F4CE14;
+        }
+    }
+
+    .img-container {
+        position: relative;
+        flex: 1;
+        .img1 {
+            width: 60%;
+            transform: scaleX(-1);
+            border-radius: 0px 16px 0px 0px;
+        }
+        .img2 {
+            width: 60%;
+            position: absolute;
+            translate: -247px 39px;
+            border-radius: 0px 0px 16px 0px;
+        }
+    }
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+
+        .img-container {
+            text-align: center;
+        }
+    }
+}

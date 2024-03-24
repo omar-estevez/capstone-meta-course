@@ -27,7 +27,36 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    font-size: 29px;
+    margin: 0;
+}
+
+h4 {
+    font-size: 22px;
+    margin: 0;
+}
+
 button {
+    width: 60%;
+    background-color: #F4CE14;
     border: none;
     font-size: 18px;
+    padding: 1vw;
+    border-radius: 16px;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: 0.8s;
+    }
+
+    &:active {
+        background-color: rgba(244, 206, 20, 0.5);
+        transition: 0s;
+    }
+
+    @media (max-width: 800px) {
+        padding: 2vw;
+    }
 }
