@@ -1,7 +1,7 @@
 import '../../styles/BookingForm.scss';
 import { useState } from 'react';
 
-const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
+const BookingForm = ({ availableTimes, updateTimes, submitForm, setFormData }) => {
 
     const [name, setName] = useState("");
     const [date, setDate] = useState("");
@@ -44,6 +44,7 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
             // Handle form submission logic here
             const formData = createObject(e.target.elements);
             submitForm(formData);
+            setFormData(formData);
             clearForm();
         }
     };
