@@ -1,0 +1,42 @@
+.right-form {
+    padding: 35px 110px;
+
+    h1 {
+        text-align: center;
+    }
+
+    .form-container {
+        display: grid;
+        width: 100%;
+        gap: 20px;
+
+        fieldset {
+            display: flex;
+            border: none;
+            flex-direction: column;
+
+            .Field {
+                position: relative;
+                padding-bottom: 24px;
+                display: flex;
+                flex-direction: column;
+
+                input,
+                select {
+                    padding: 15px;
+                    font-size: 18px;
+                    border-radius: 16px;
+                    border: 0.1px solid #495E57;
+                }
+            }
+
+            button {
+                width: 100%;
+
+                &:disabled {
+                    background-color: rgba(244, 206, 20, 0.5);
+                }
+            }
+        }
+    }
+}
