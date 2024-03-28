@@ -35,9 +35,28 @@
 
   @media (max-width: 800px) {
     flex-direction: column;
+
+    .mobile-menu {
+      color: #495E57;
+      margin: 0 auto;
+      transform: scale(1.5);
+      margin-bottom: 10px;
+    }
+
+    hr {
+      width: 80%;
+      border: 0.2px solid #495E57;
+    }
+
     .menu {
       padding: 0;
       flex-direction: column;
+      opacity: 0;
+      transition: opacity 0.9s ease-in-out;
+    }
+
+    .menu.visible {
+      opacity: 1;
     }
   }
 }
